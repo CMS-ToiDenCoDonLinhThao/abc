@@ -1,0 +1,95 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+ body  {
+ 	padding-top: 50px;
+ }
+ html,body {
+ 	height:100%;
+ }
+.carousel,.item,.active {
+	height:100%;
+}
+.carousel-inner {
+	height:100%;
+}
+ul.nav-stacked {
+	padding-top: 1.5rem;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.footer-wrapper {
+	background-color: #2A2730;
+}
+nav.navbar {
+	box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+}
+.nav .col-xs-4 {
+	padding-left: 0;
+}
+
+.footer {
+	li {
+		list-style-type: none;
+	}
+	a {
+		color: #fff;
+	}
+}
+
+// Using media query here(200px just for destop)
+ul.navbar-search {
+	margin-left: 200px;
+}
+
+// Using media query here
+
+input.search {
+	width: 100% !important;
+}
+
+
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.slider ul {
+    wisliderdth: 20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.slider li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
